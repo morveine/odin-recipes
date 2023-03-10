@@ -11,10 +11,92 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(0deg,rgba(0, 0, 0, 0.383), rgba(0, 0, 0, 0.383)), url(img/brooke-lark-KyUmKlXrhAM-unsplash.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.383), rgba(0, 0, 0, 0.383)), url(img/brooke-lark-KyUmKlXrhAM-unsplash.jpg);
     background-color: rgba(0, 0, 0, 0.383);
     font-family: "Comfortaa", sans-serif;
     display: flex;
     flex-direction: column;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+main {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.recipes-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 3px #ffffff9e solid;
+    border-radius: 20px;
+    background-color: #ffffff5c;
+    align-items: center;
+    flex: 1;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.recipe:hover {
+    background-color: #5c5c5cc2;
+}
+
+.recipe:active {
+    transform: scale(0.95);
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.recipe-link {
+    align-self: stretch;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a, 
+a:visited {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+
+.recipe-link{
+    font-size: 25px;
+    word-wrap: normal;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+    color: white;
 }
