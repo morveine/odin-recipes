@@ -1,2 +1,1 @@
-
-  
+This is a recipe page made with the help of The Odin Project curriculum and a bit of love.
