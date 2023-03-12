@@ -33,6 +33,7 @@ header {
 
 h1 {
     font-size: 40px;
+    text-align: center;
 }
 
 .recipe-container {
@@ -42,35 +43,27 @@ h1 {
     margin-bottom: 30px;
     display: grid;
     gap: 30px;
+    align-self: center;
+    width: 1000px;
 }
 
 img {
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
-}
-
-.left-side-grid {
-    display: grid;
-    grid-template-rows: 400px 1fr;
-    gap: 20px;
+    width: 400px;
+    height: 400px;
 }
 
 h2 {
     font-size: 25px;
+    margin-top: 20px;
 }
 
 ul {
     list-style-type: none;
     margin-top: 20px;
     font-size: 18px;
-}
-
-.right-side-grid {
-    display: grid;
-    grid-template-columns: 500px;
-    grid-template-rows: max-content;
-    gap: 30px;
 }
 
 .description>p {
@@ -104,4 +97,22 @@ h3 {
 
 a {
     color: white;
+}
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        margin: 50px 0 30px;
+    }
+
+    .recipe-container {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+    }
 }

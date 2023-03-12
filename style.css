@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
+    gap: 20px;
 }
 
 header {
@@ -27,32 +28,35 @@ header {
 h1 {
     font-size: 60px;
     font-weight: 700;
+    margin: 0 20px;
+    text-align: center;
 }
 
 main {
-    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .recipes-wrapper {
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 3vw;
+    justify-content: center;
 }
 
 .recipe {
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
-    padding-top: 20px;
     border: 3px #ffffff9e solid;
     border-radius: 20px;
     background-color: #ffffff5c;
     align-items: center;
-    flex: 1;
+    flex: 0 1 0;
     text-decoration: none;
     transition: 0.2s ease-in-out;
+    padding: 20px;
 }
 
 .recipe:hover {
@@ -68,15 +72,17 @@ img {
     width: 300px;
     object-fit: cover;
     border-radius: 20px;
+    flex-shrink: 1;
 }
 
 .recipe-link {
     align-self: stretch;
     flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
+    flex-shrink: 1;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
 }
 
 a, 
@@ -86,12 +92,6 @@ a:visited {
 }
 
 
-.recipe-link{
-    font-size: 25px;
-    word-wrap: normal;
-    text-align: center;
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -99,4 +99,11 @@ footer {
     padding: 20px;
     gap: 5px;
     color: white;
+    text-align: center;
 }
+
+.git-link {
+    display: flex;
+    align-items: center;
+}
+
